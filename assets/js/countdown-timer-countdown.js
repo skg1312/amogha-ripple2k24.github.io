@@ -1,4 +1,5 @@
 // Function to calculate the time remaining until the deadline
+// Function to calculate the time remaining until the deadline
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -14,6 +15,7 @@ function getTimeRemaining(endtime) {
   };
 }
 
+// Function to initialize the clock and update it every second
 // Function to initialize the clock and update it every second
 function initializeClock(id, endtime) {
   var clock = document.getElementById(id);
